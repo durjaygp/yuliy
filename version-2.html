@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section | Premium Edition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        .font-sans-custom { font-family: 'Jost', sans-serif; }
+        .font-serif-custom { font-family: 'Playfair Display', serif; }
+        
+        /* The Radiant Upgrade */
+        .bg-radiant-glow {
+            background: radial-gradient(circle at center, #FF4D00 0%, #B32D00 50%, #7A1A00 100%);
+        }
+
+        .text-glow {
+            text-shadow: 0 0 40px rgba(255, 77, 0, 0.4);
+        }
+
+        .mask-bottom {
+            -webkit-mask-image: linear-gradient(to top, transparent 5%, black 25%);
+            mask-image: linear-gradient(to top, transparent 5%, black 25%);
+        }
+    </style>
+</head>
+<body class="bg-radiant-glow text-white font-sans-custom overflow-hidden h-screen relative selection:bg-white selection:text-orange-600">
+
+    <header class="absolute top-0 left-0 w-full flex justify-between items-center px-8 py-10 md:px-16 z-30 uppercase tracking-[0.3em] text-[10px] md:text-xs font-light">
+        <a href="#" class="hover:tracking-[0.4em] transition-all duration-500">Yuliy Bodurski</a>
+        
+        <button class="flex flex-col items-center group space-y-2">
+            <div class="relative w-10 h-[1px] bg-white overflow-hidden">
+                <div class="absolute inset-0 bg-white translate-x-0 group-hover:translate-x-full transition-transform duration-500"></div>
+                <div class="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
+            </div>
+            <span class="opacity-80 group-hover:opacity-100 transition-opacity">Menu</span>
+        </button>
+        
+        <a href="#" class="hover:opacity-60 transition-opacity">Contact</a>
+    </header>
+
+    <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+        <h1 class="text-[32vw] md:text-[28vw] font-serif-custom text-white leading-none select-none tracking-tighter opacity-90 text-glow">
+            Yuliy
+        </h1>
+    </div>
+
+    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full h-[75vh] md:h-[90vh] z-20 flex justify-center items-end pointer-events-none">
+        <img src="111.png"
+             alt="Model Profile" 
+             class="h-full w-auto object-cover object-top mask-bottom drop-shadow-2xl" />
+    </div>
+
+    <div class="absolute inset-0 z-40 pointer-events-none opacity-[0.03] mix-blend-overlay bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
+
+</body>
+</html>

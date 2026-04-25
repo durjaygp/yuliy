@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        .font-sans-custom { font-family: 'Jost', sans-serif; }
+        .font-serif-custom { font-family: 'Playfair Display', serif; }
+        
+        /* Optional: Smooth fade at the bottom of the image */
+        .mask-bottom {
+            -webkit-mask-image: linear-gradient(to top, transparent, black 15%);
+            mask-image: linear-gradient(to top, transparent, black 15%);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-[#ff5100] to-[#cc2b00] text-white font-sans-custom overflow-hidden h-screen relative selection:bg-black selection:text-white">
+
+    <header class="absolute top-0 left-0 w-full flex justify-between items-start px-6 py-8 md:px-12 md:py-10 z-30 uppercase tracking-[0.2em] text-xs md:text-sm">
+        <a href="#" class="hover:opacity-75 transition-opacity">Yuliy Bodurski</a>
+        
+        <button class="flex flex-col items-center group">
+            <span class="w-8 h-[2px] bg-white mb-2 group-hover:w-12 transition-all duration-300"></span>
+            <span>Menu</span>
+        </button>
+        
+        <a href="#" class="hover:opacity-75 transition-opacity">Contact</a>
+    </header>
+
+    <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+        <h1 class="text-[28vw] md:text-[24vw] font-serif-custom text-white leading-none select-none tracking-tight">Yuliy </h1>
+    </div>
+
+    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full h-[70vh] md:h-[85vh] z-20 flex justify-center items-end pointer-events-none">
+        <img src="111.png"
+             alt="Model Profile" 
+             class="h-full w-auto object-cover object-top mask-bottom" />
+    </div>
+
+</body>
+</html>
